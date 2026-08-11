@@ -1,0 +1,123 @@
+{
+  "project_name": "DoctorVovô",
+  "domain": "Senior Care, Health & Wellness",
+  "theme": "light",
+  "archetype": "1 (Organic & Earthy)",
+  "emotional_tone": "Warm, caring, respectful, intuitive, highly accessible.",
+  "language": "pt-BR",
+  "colors": {
+    "background": "#FDFBF7",
+    "surface": "#FFFFFF",
+    "surface_secondary": "#F3EFE6",
+    "primary": "#2D5A4C",
+    "primary_hover": "#1E4033",
+    "primary_light": "#E6EFEA",
+    "secondary": "#C25433",
+    "secondary_light": "#F7E6E0",
+    "text_primary": "#1A2E26",
+    "text_secondary": "#4A6157",
+    "sos_alert": "#D93829",
+    "sos_alert_light": "#FCE9E7",
+    "success": "#3A7D52",
+    "border": "#E2DCD0"
+  },
+  "typography": {
+    "anti_default_rule": "No Inter. Use warm, highly legible geometric or rounded sans-serifs.",
+    "heading_font": "Nunito, Manrope, or system-ui (rounded)",
+    "body_font": "Work Sans, system-ui",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight",
+      "h2": "text-3xl sm:text-4xl font-bold tracking-tight leading-snug",
+      "h3": "text-2xl font-bold leading-snug",
+      "body_large": "text-2xl leading-relaxed",
+      "body": "text-xl leading-relaxed",
+      "label": "text-lg font-bold tracking-wide uppercase",
+      "minimum_size": "20px (Strict rule: No text smaller than 20px anywhere in the app)"
+    }
+  },
+  "spacing_and_layout": {
+    "touch_targets": "Minimum 64px height (h-16) and width for all interactive elements. No exceptions.",
+    "container_padding": "p-6 sm:p-8 for generous breathing room.",
+    "gap": "gap-6 sm:gap-8 between structural sections.",
+    "layout_strategy": "Strictly linear (1-column). Avoid complex grids or overlapping elements. Every action must have a clear, distinct row.",
+    "radius": "rounded-2xl to rounded-3xl for a soft, friendly, non-clinical feel.",
+    "shadows": "shadow-lg shadow-black/5 (soft ambient shadows, no harsh lines)."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#2D5A4C] text-white h-16 rounded-2xl text-2xl font-bold flex items-center justify-center gap-3 active:scale-95 transition-transform",
+      "secondary": "bg-[#F3EFE6] text-[#1A2E26] h-16 rounded-2xl text-2xl font-bold flex items-center justify-center gap-3 active:scale-95 transition-transform border-2 border-[#E2DCD0]",
+      "sos": "bg-[#D93829] text-white h-20 rounded-full text-3xl font-black flex items-center justify-center gap-4 shadow-xl active:bg-[#B32B1E]"
+    },
+    "cards": {
+      "default": "bg-white p-6 rounded-3xl border-2 border-[#E2DCD0] shadow-sm flex flex-col gap-4",
+      "interactive": "bg-white p-6 rounded-3xl border-2 border-[#E2DCD0] shadow-sm flex flex-col gap-4 active:border-[#2D5A4C] active:bg-[#E6EFEA]"
+    },
+    "inputs": {
+      "default": "h-16 bg-white border-2 border-[#E2DCD0] rounded-2xl px-6 text-2xl text-[#1A2E26] placeholder:text-[#4A6157] focus:border-[#2D5A4C] focus:ring-4 focus:ring-[#2D5A4C]/20"
+    }
+  },
+  "screens_and_features": {
+    "onboarding": {
+      "description": "Personalized profile setup. Large inputs for Name, how they want to be called (e.g., 'Seu Antônio'), and photo capture.",
+      "visuals": "Use 'onboarding_illustration' to set a warm tone."
+    },
+    "home_dashboard": {
+      "description": "Greeting area: 'Bom dia, Seu Antônio ☀️' + Large Avatar. Core actions: 'Medicamentos de Hoje', 'Meus Compromissos', 'Jogos', 'Área da Família'.",
+      "layout": "Vertical list of massive cards. Sticky SOS button at the bottom right or centered bottom bar."
+    },
+    "medicine_tracker": {
+      "description": "AI-powered medicine identification. Big button 'Identificar Remédio por Foto'. Fallback to manual entry with big text.",
+      "interaction": "Visual display of the pill (color/shape) + Caregiver audio snippet ('Pai, hora do remédio da pressão')."
+    },
+    "alarms_reminders": {
+      "description": "Humanized reminders combining large text and a play button for Caregiver Audio/Video.",
+      "tts": "Fallback to native device TTS reading the text aloud if no custom audio is recorded."
+    },
+    "cognitive_games": {
+      "description": "Simple cognitive exercises: Memory (cards), Logical Sequence, Questions.",
+      "ui_rules": "Extreme contrast. Massive tap areas. Positive reinforcement ('Muito bem, Vovó Maria!')."
+    },
+    "family_area": {
+      "description": "A digital scrapbook and message center. Family members can leave audio/video notes.",
+      "visuals": "Use 'family_illustration' as an empty state or header."
+    }
+  },
+  "media_urls": {
+    "avatar_grandfather_1": {
+      "url": "https://images.unsplash.com/photo-1648817976768-a2fdcba20f9a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwxfHxzbWlsaW5nJTIwZ3JhbmRmYXRoZXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3Nzg5NzkzNzh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Avatar for Seu Antônio (Elderly Man)"
+    },
+    "avatar_grandfather_2": {
+      "url": "https://images.unsplash.com/photo-1593614202631-c29a06abba1d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwyfHxzbWlsaW5nJTIwZ3JhbmRmYXRoZXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3Nzg5NzkzNzh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Avatar alternative (Elderly Man)"
+    },
+    "avatar_grandmother_1": {
+      "url": "https://images.unsplash.com/photo-1665062173657-3912ae7991e0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwyfHxzbWlsaW5nJTIwZ3JhbmRtb3RoZXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3Nzg5NzkzNzh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Avatar for Vovó Maria (Elderly Woman)"
+    },
+    "onboarding_illustration": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/fef703b7-e5c5-4223-b62a-de198ac87ae1/images/6b08ec23b3b99b0a0c61d9f5be2228941408c2aeef7065cf051cc61de31b0c55.png",
+      "description": "Warm onboarding illustration of elderly using app"
+    },
+    "family_illustration": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/fef703b7-e5c5-4223-b62a-de198ac87ae1/images/a56036ff80ae3da15cf1f73318684fd7351be7db7239a128aca346f086ae4a5e.png",
+      "description": "Illustration of family hugging, for family area"
+    }
+  },
+  "accessibility_and_ux_rules": {
+    "contrast": "All text MUST pass WCAG AAA (Contrast ratio > 7:1) due to age-related vision changes. Do not use light gray text.",
+    "iconography": "All icons must be accompanied by text labels. Do not rely on icons alone.",
+    "audio": "Implement large 'Ouvir' (Listen) buttons next to all major text blocks to trigger TTS or caregiver audio.",
+    "data_testid": "ALL interactive elements MUST have semantic `data-testid` attributes (e.g., `data-testid='sos-emergency-button'`)."
+  },
+  "instructions_to_main_agent": [
+    "Build this as an Expo React Native Web compatible app (mobile_web_app).",
+    "Ensure all text scales dynamically and uses the minimum 20px size rule as defined.",
+    "Use Lucide-React icons (e.g., Phone, Pill, Calendar, Heart, Brain) but scale them to massive sizes (min size 32).",
+    "For the SOS Button, ensure it is always accessible (fixed position or highly visible in the nav/header).",
+    "Use standard HTML audio/video elements or Expo Audio for the caregiver playback feature (mocked if necessary).",
+    "Mock the AI Medicine Identification by showing a fake camera view that resolves to a mocked recognized medicine (e.g., 'Losartana 50mg').",
+    "Ensure all UI is strictly in Brazilian Portuguese (pt-BR)."
+  ]
+}

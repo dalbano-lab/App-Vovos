@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.db
+.env
+venv/
+.venv/
+
+# Node/Expo
+node_modules/
+.expo/
+dist/
+*.log
+.metro-cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testes
+test_result.md
+test_reports/
+image_testing.md
+.emergent/
